@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RACHID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">موقع RACHID</h1>
+    <p class="fade-in delay">مرحبا بك في عالم الإبداع!</p>
+  </header>
+
+  <main>
+    <img src="https://via.placeholder.com/600x300" alt="صورة ترحيبية" class="image-slide" />
+
+    <p id="welcome-text">اضغط الزر لترى رسالة ترحيب مميزة!</p>
+    <button onclick="showMessage()" class="btn-glow">أظهر الرسالة</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 موقع RACHID. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("welcome-text").innerText = "أهلاً وسهلاً بك في عالم RACHID!";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #dbe9f4);
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #007acc;
+    color: white;
+    padding: 40px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  main {
+    padding: 40px 20px;
+  }
+  
+  img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    animation: slideIn 1.5s ease-out forwards;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #eee;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  .fade-in.delay {
+    animation-delay: 0.5s;
+  }
+  
+  .btn-glow {
+    box-shadow: 0 0 10px #007acc;
+  }
